@@ -15,11 +15,13 @@ import PwdFind from "./page/User/PWD/PwdFind";
 import PwdChange from "./page/User/PWD/PwdChange";
 import MyPage from "./page/User/MyPage";
 import IdCheck from "./page/User/ID/IdCheck";
+import Nav from "./page/Nav";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
+        <Nav />
         <Routes>
           <Route index element={<Home />} />
           <Route path="/login" element={<Login />} />
